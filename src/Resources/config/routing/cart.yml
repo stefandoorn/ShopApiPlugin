@@ -1,41 +1,41 @@
 shop_api_pickup_cart:
-    path: /carts/{token}
-    methods: [POST]
+    path: "/carts/{token}"
+    methods: ["POST"]
     defaults:
-        _controller: ShopApiPlugin:Cart:pickup
+        _controller: "ShopApiPlugin:Cart:pickup"
 
 shop_api_cart_summary:
-    path: /carts/{token}
-    methods: [GET]
+    path: "/carts/{token}"
+    methods: ["GET"]
     defaults:
-        _controller: ShopApiPlugin:Cart:summary
+        _controller: "ShopApiPlugin:Cart:summary"
 
 shop_api_add_to_cart:
-    path: /carts/{token}/items
-    methods: [POST]
+    path: "/carts/{token}/items"
+    methods: ["POST"]
     defaults:
-        _controller: ShopApiPlugin:Cart:add
+        _controller: "ShopApiPlugin:Cart:add"
 
 shop_api_drop_cart:
-    path: /carts/{token}
-    methods: [DELETE]
+    path: "/carts/{token}"
+    methods: ["DELETE"]
     defaults:
-        _controller: ShopApiPlugin:Cart:drop
+        _controller: "ShopApiPlugin:Cart:drop"
 
 shop_api_change_item_quantity:
-    path: /carts/{token}/items/{id}
-    methods: [PUT]
+    path: "/carts/{token}/items/{id}"
+    methods: ["PUT"]
     defaults:
-        _controller: ShopApiPlugin:Cart:changeItemQuantity
+        _controller: "ShopApiPlugin:Cart:changeItemQuantity"
 
 shop_api_remove_item:
-    path: /carts/{token}/items/{id}
-    methods: [DELETE]
+    path: "/carts/{token}/items/{id}"
+    methods: ["DELETE"]
     defaults:
-        _controller: ShopApiPlugin:Cart:removeItem
+        _controller: "ShopApiPlugin:Cart:removeItem"
 
 shop_api_estimated_shipping_cost:
-    path: /carts/{token}/estimated-shipping-cost
-    methods: [GET]
+    path: "/carts/{token}/estimated-shipping-cost"
+    methods: ["GET"]
     defaults:
-        _controller: ShopApiPlugin:Cart:estimateShippingCost
+        _controller: "ShopApiPlugin:Cart:estimateShippingCost"

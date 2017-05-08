@@ -1,11 +1,11 @@
 shop_api_taxon_show_details:
-    path: /taxons/{slug}
-    methods: [GET]
+    path: "/taxons/{slug}"
+    methods: ["GET"]
     defaults:
-        _controller: ShopApiPlugin:Taxon:showDetails
+        _controller: "ShopApiPlugin:Taxon:showDetails"
 
 shop_api_taxon_show_tree:
-    path: /taxons/
-    methods: [GET]
+    path: "/taxons/"
+    methods: ["GET"]
     defaults:
-        _controller: ShopApiPlugin:Taxon:showTree
+        _controller: "ShopApiPlugin:Taxon:showTree"

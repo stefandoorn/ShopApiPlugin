@@ -1,37 +1,37 @@
 Sylius\ShopApiPlugin\View\ProductView:
-    exclusion_policy: ALL
-    xml_root_name: product_view
+    exclusion_policy: "ALL"
+    xml_root_name: "product_view"
     properties:
         code:
             expose: true
-            type: string
+            type: "string"
         name:
             expose: true
-            type: string
+            type: "string"
         slug:
             expose: true
-            type: string
+            type: "string"
         price:
             expose: true
-            type: integer
+            type: "integer"
         taxons:
             expose: true
-            type: array
+            type: "array"
         variants:
             expose: true
-            type: array
+            type: "array"
         images:
             expose: true
-            type: array
+            type: "array"
         attributes:
             expose: true
-            type: array
+            type: "array"
         associations:
             expose: true
-            type: array
+            type: "array"
     relations:
-        -   rel: self
+        -   rel: "self"
             href:
-                route: shop_api_product_show_details
+                route: "shop_api_product_show_details"
                 parameters:
-                    slug: expr(object.slug)
+                    slug: "expr(object.slug)"
